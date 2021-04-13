@@ -17,5 +17,4 @@ For python3 users:
 python3 manage.py runserver
 ```
 
-Developed by 
--Karthikeya Jayaram
+Developed by Karthikeya Jayaram
