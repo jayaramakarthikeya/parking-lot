@@ -11,6 +11,9 @@ To run the website:
 ```
 git clone https://github.com/JayaramKarthik/parking-lot.git
 ```
+
+Add your custom secret key in django.txt file and setup your own sqlite3 database to store the data.
+
 For python3 users:
 
 ```
