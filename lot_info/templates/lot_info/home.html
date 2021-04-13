@@ -1,0 +1,35 @@
+
+{% extends 'lot_info/base.html' %}
+
+{% block content %}
+
+<br>
+<div class="container bord">
+<div class="row">
+
+    <br>
+    {% for column in columns %}
+            <div class="col">
+            <h2> {{column.column_name}} </h2>
+            <br>
+            <div class="btn-group-vertical">
+                {% for row in rows %}
+                {% if row.column_id.column_name == column.column_name %}
+                {% if row.is_filled %}
+                <input type="radio" class="btn-check" name="btnradio" id="btnradiox" autocomplete="off">
+                <label class="btn btn-success large-btn" for="btnradiox"> {{row.column_id.column_name}}{{row.row_name}} </label>
+                {% else %}
+                <input type="radio" class="btn-check" name="btnradio" id="btnradiox" autocomplete="off">
+                <label class="btn btn-danger large-btn" for="btnradiox"> {{row.column_id.column_name}}{{row.row_name}} </label>
+                {% endif %}
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+
+    {% endfor %}
+
+</div>
+</div>
+
+  {% endblock content %}

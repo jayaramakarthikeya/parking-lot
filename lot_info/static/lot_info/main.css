@@ -1,0 +1,23 @@
+
+.large-btn{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bord{
+    display: flexbox;
+    border: 2px solid green;
+    align-content: space-around;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 600px;
+    margin-top: 30px;
+
+
+}
+
+.col {
+  padding-left: 30px;
+  padding-right: 0px;
+  align-content: center;
+}
